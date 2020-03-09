@@ -1,0 +1,134 @@
+{
+	"variables": [],
+	"info": {
+		"name": "adrian-api",
+		"_postman_id": "d0a7f466-e3f7-a6f2-0e77-33323b64ddf2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read Interventions",
+			"request": {
+				"url": "http://adrian-api.blocnotes-informatique.fr:8080/todos",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Liste les interventions"
+			},
+			"response": []
+		},
+		{
+			"name": "Read Intervention",
+			"request": {
+				"url": "http://adrian-api.blocnotes-informatique.fr:8080/todos/intervention_1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Lit intervention"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Intervention",
+			"request": {
+				"url": "http://51.77.157.249:8080/todos/intervention_2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Liste les interventions"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Intervention",
+			"request": {
+				"url": "http://51.77.157.249:8080/todos",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "libelle",
+							"value": "libelle test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nom_intervenant",
+							"value": "intervenant test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lieu",
+							"value": "lieu test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "08-03-2020",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Liste les interventions"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Intervention",
+			"request": {
+				"url": "http://51.77.157.249:8080/todos/intervention_4",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "libelle",
+							"value": "libelle test_updated",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description test_updated",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nom_intervenant",
+							"value": "intervenant test_updated",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lieu",
+							"value": "lieu test_updated",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "08-05-2020",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Liste les interventions"
+			},
+			"response": []
+		}
+	]
+}
